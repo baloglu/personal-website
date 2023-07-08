@@ -1,0 +1,43 @@
+.home_container {
+    background-color: beige;
+    height: 10rem;
+    border: 2px solid blue;
+}
+
+.profile_container {
+    margin: 20px;
+    display: flex;
+}
+
+.profile_container_mobile {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left_profile {
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.right_profile {
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.home_header {
+    font-size: 8rem;
+    margin:2rem;
+}
+
+.home_subtitle {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.profile_photo {
+    height: 45rem;
+    border-radius: 20px;
+}

@@ -1,0 +1,122 @@
+#navbar_container {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: aqua;
+    font-size: 1.5rem;
+    height:2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px; */
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 0rem;
+    background-color: #fff;
+    color: black;
+
+}
+
+
+.navbar_page {
+    margin-right: 8px;
+    align-self: center;
+    border-radius: 3px;
+    padding: 3px;
+    font-size:1rem;
+    text-transform: uppercase;
+}
+
+.navbar_page:hover {
+    margin-right: 5px;
+    padding: 5px;
+    color:rgba(1, 16, 16,0.5);
+}
+
+.current_page {
+    margin-right: 8px;
+    align-self: center;
+    font-size:1rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0, 0, 255);
+}
+
+.current_page:hover {
+    margin-right: 5px;
+    padding: 5px;
+    background-color: azure;
+    color:rgba(1, 16, 16,0.5);
+}
+
+.navbar_logo {
+    font-size:1rem;
+    text-transform: uppercase;
+    align-self: center;
+    color: black;
+    border-radius: 3px;
+}
+
+.navbar_logo:hover {
+    color:rgba(1, 16, 16,0.5);
+}
+.navbar_right {
+    display: flex;
+    margin-left: auto;
+}
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: rgba(18, 82, 82, 0.5);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  .hamburger:hover {
+    background-color: #2642af;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+      }
+    .navbar_right {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      height: calc(30vh - 77px);
+      background-color: white;
+      border-top: 1px solid black;
+    }
+    .navbar_right_closed {
+        position: absolute;
+        display: none;
+      }
+    .navbar_right {
+      text-align: center;
+      margin: 0;
+    }
+    .navbar_right Link {
+      color: black;
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+    .navbar_right Link:hover {
+      background-color: #eee;
+    }
+  }
